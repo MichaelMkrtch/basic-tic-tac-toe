@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#app {
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background: #222;
+}
+
+.header > * {
+    color: #eee;
+}
+
+.header-turn {
+    padding: 0.75rem;
+}
+
+.header-status {
+    padding: 0.75rem;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.header-restart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.board {
+    display: grid;
+    background: #ccc;
+    gap: 10px;
+    padding: 10px;
+    flex-grow: 1;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.board-tile {
+    background: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    color: #222;
+}
+
+.board-tile:hover {
+    background: lightblue;
+}
+
+.board-tile-winner {
+    color: green;
+}
