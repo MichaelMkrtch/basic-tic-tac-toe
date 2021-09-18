@@ -10,7 +10,7 @@ export default class Game {
 
     makeMove(index) {
         // Ends game
-        if (!this.isInProgress) {
+        if (!this.isInProgress()) {
             return;
         }
 
