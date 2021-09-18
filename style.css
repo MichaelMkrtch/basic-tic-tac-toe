@@ -8,11 +8,13 @@
 
 html {
     background: #EAEAEA;
+    position: relative;
 }
 
 html, body {
-    height: 100%;
+    min-height: 100%;
 }
+
 /* Top Bar */
 .banner {
     position: relative;
