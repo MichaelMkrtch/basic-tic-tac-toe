@@ -16,7 +16,7 @@ html, body {
 /* Top Bar */
 .banner {
     position: relative;
-    padding: 20px;
+    padding: 1.25rem;
     background: #393E46;
     border: 3px solid #2a3a46;
 }
@@ -29,7 +29,7 @@ html, body {
 
 /* Board */
 #main {
-    border: 1px solid black;
+    border: 1px solid #393E46;
     margin-top: 2rem;
     width: 500px;
     height: 500px;
@@ -101,23 +101,48 @@ html, body {
     color: #00ADB5;
 }
 
-@media only screen and (max-width: 650px) {
-    #main {
-        width: 350px;
-        height: 350px;
-    }
-}
-
 /* footer */
 footer {
     width: 100%;
     position: absolute;
     bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
 }
 
 footer p {
-    padding: 2rem;
+    font-size: 1.25rem;
     font-weight: 600;
     color: #393E46;
     text-align: center;
+}
+
+footer img {
+    margin: 0.4rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    opacity: 0.85;
+}
+
+/* Responsive Sizing */
+@media only screen and (max-width: 650px) {
+    #main {
+        width: 350px;
+        height: 350px;
+    }
+
+    .banner h1 {
+        font-size: 3rem;
+    }
+
+    .board-tile {
+        font-size: 4rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
 }
